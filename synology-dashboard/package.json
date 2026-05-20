@@ -1,0 +1,16 @@
+{
+  "name": "autotask-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Internal dashboard: open tickets per Autotask team member, plus closed-this-week.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

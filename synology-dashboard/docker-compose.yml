@@ -1,0 +1,10 @@
+services:
+  autotask-dashboard:
+    build: .
+    image: autotask-dashboard:latest
+    container_name: autotask-dashboard
+    restart: unless-stopped
+    ports:
+      - "3030:3000"
+    env_file:
+      - .env
