@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autotask Ticket Dashboard</title>
+  <meta name="robots" content="noindex,nofollow">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #ffffff;
+      --bg2: #f5f5f7;
+      --bg3: #e8e8ed;
+      --text: #1d1d1f;
+      --muted: #6e6e73;
+      --accent: #0071e3;
+      --accent-hover: #0077ed;
+      --accent-2: #34c759;
+      --danger: #b00020;
+      --border: rgba(0,0,0,0.08);
+      --radius: 18px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 48px 2rem 24px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    header .titles .eyebrow {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    header h1 {
+      font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+    }
+    header .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    header .meta .pill {
+      display: inline-block;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 4px 10px;
+      margin-right: 6px;
+    }
+
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 2rem 60px;
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .toolbar .updated {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .btn {
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      border: none;
+      font-family: inherit;
+      transition: background 0.15s, transform 0.15s;
+    }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover:not(:disabled) { background: var(--accent-hover); }
+    .btn:disabled { opacity: 0.55; cursor: not-allowed; }
+
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .kpi {
+      background: var(--bg2);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+    }
+    .kpi .num {
+      font-size: 2.1rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+    .kpi .label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+
+    .table {
+      background: var(--bg2);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+    }
+    .table-head {
+      display: grid;
+      grid-template-columns: minmax(200px, 1.5fr) 1fr 60px 90px;
+      gap: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .table-head .num-col { text-align: right; }
+    .row {
+      display: grid;
+      grid-template-columns: minmax(200px, 1.5fr) 1fr 60px 90px;
+      gap: 1rem;
+      align-items: center;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .row:last-child { border-bottom: none; }
+    .name {
+      font-size: 0.92rem;
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .name .sub {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 400;
+      color: var(--muted);
+      margin-top: 1px;
+    }
+    .bar-wrap {
+      background: var(--bg3);
+      height: 10px;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), #4ea3ff);
+      border-radius: 999px;
+      transition: width 0.4s ease;
+    }
+    .num-col {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .closed-num {
+      color: var(--accent-2);
+    }
+    .closed-num.zero { color: var(--muted); font-weight: 500; }
+
+    .err {
+      background: #fdecec;
+      border: 1px solid #f1bfbf;
+      color: #6e1010;
+      padding: 14px 16px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .empty { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.9rem; }
+
+    .spinner {
+      display: inline-block;
+      width: 12px; height: 12px;
+      border: 2px solid rgba(0,0,0,0.15);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin-right: 0.4rem;
+      vertical-align: -1px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @media (max-width: 720px) {
+      .table-head { grid-template-columns: 1fr 60px 90px; }
+      .table-head .bar-col { display: none; }
+      .row { grid-template-columns: 1fr 60px 90px; }
+      .row .bar-wrap { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="titles">
+      <div class="eyebrow">Autotask</div>
+      <h1>Open Tickets &amp; Closed This Week</h1>
+      <div class="meta" id="header-meta"></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="toolbar">
+      <div class="updated" id="updated"><span class="spinner"></span>Loading…</div>
+      <button id="refresh" class="btn btn-primary" disabled>Refresh</button>
+    </div>
+
+    <div id="error-box"></div>
+
+    <div class="kpis" id="kpis" style="display:none">
+      <div class="kpi"><div class="num" id="kpi-open">—</div><div class="label">Open tickets</div></div>
+      <div class="kpi"><div class="num" id="kpi-closed">—</div><div class="label">Closed this week</div></div>
+      <div class="kpi"><div class="num" id="kpi-members">—</div><div class="label">Members with activity</div></div>
+      <div class="kpi"><div class="num" id="kpi-unassigned">—</div><div class="label">Unassigned open</div></div>
+    </div>
+
+    <div class="table" id="table" style="display:none">
+      <div class="table-head">
+        <div>Team member</div>
+        <div class="bar-col">Open load</div>
+        <div class="num-col">Open</div>
+        <div class="num-col">Closed&nbsp;wk</div>
+      </div>
+      <div id="rows"></div>
+    </div>
+  </main>
+
+  <script>
+    'use strict';
+
+    const $ = (id) => document.getElementById(id);
+    const els = {
+      headerMeta: $('header-meta'),
+      updated: $('updated'),
+      refresh: $('refresh'),
+      errorBox: $('error-box'),
+      kpis: $('kpis'),
+      open: $('kpi-open'),
+      closed: $('kpi-closed'),
+      members: $('kpi-members'),
+      unassigned: $('kpi-unassigned'),
+      table: $('table'),
+      rows: $('rows')
+    };
+
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[<>&"]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
+    }
+
+    async function load({ fresh } = {}) {
+      els.refresh.disabled = true;
+      els.errorBox.innerHTML = '';
+      els.updated.innerHTML = '<span class="spinner"></span>Loading…';
+      try {
+        const url = fresh ? '/api/tickets?fresh=1' : '/api/tickets';
+        const res = await fetch(url, { headers: { Accept: 'application/json' } });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+        render(data);
+      } catch (e) {
+        els.errorBox.innerHTML = `<div class="err"><strong>Failed to load.</strong>\n${esc(e.message || e)}</div>`;
+        els.updated.textContent = '';
+      } finally {
+        els.refresh.disabled = false;
+      }
+    }
+
+    function render(d) {
+      els.open.textContent = d.openTotal.toLocaleString();
+      els.closed.textContent = d.closedThisWeekTotal.toLocaleString();
+      els.members.textContent = d.members.length.toLocaleString();
+      els.unassigned.textContent = d.openUnassigned.toLocaleString();
+      els.kpis.style.display = '';
+
+      const max = d.members.reduce((m, r) => Math.max(m, r.open), 0) || 1;
+      const frag = document.createDocumentFragment();
+      if (!d.members.length) {
+        const empty = document.createElement('div');
+        empty.className = 'empty';
+        empty.textContent = 'No assigned activity found.';
+        frag.appendChild(empty);
+      } else {
+        for (const m of d.members) {
+          const row = document.createElement('div');
+          row.className = 'row';
+          const pct = (m.open / max) * 100;
+          const inactive = m.active ? '' : ' • inactive';
+          const closedClass = m.closedThisWeek ? 'num-col closed-num' : 'num-col closed-num zero';
+          row.innerHTML = `
+            <div class="name">${esc(m.name)}<span class="sub">${esc(m.title)}${inactive}</span></div>
+            <div class="bar-wrap"><div class="bar" style="width:${pct}%"></div></div>
+            <div class="num-col">${m.open}</div>
+            <div class="${closedClass}">${m.closedThisWeek}</div>
+          `;
+          frag.appendChild(row);
+        }
+      }
+      els.rows.innerHTML = '';
+      els.rows.appendChild(frag);
+      els.table.style.display = '';
+
+      const weekStart = new Date(d.weekStart);
+      const fetched = new Date(d.fetchedAt);
+      els.headerMeta.innerHTML =
+        `<span class="pill">Week starts ${esc(d.weekStartDay)} — ${esc(weekStart.toLocaleDateString())}</span>` +
+        `<span class="pill">Complete status: ${esc(d.completeStatusIds.join(', '))}</span>`;
+      els.updated.textContent = `Updated ${fetched.toLocaleString()}`;
+    }
+
+    els.refresh.addEventListener('click', () => load({ fresh: true }));
+    load();
+  </script>
+</body>
+</html>

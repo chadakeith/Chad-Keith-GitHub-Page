@@ -1,0 +1,20 @@
+services:
+  autotask-dashboard:
+    build: .
+    image: autotask-dashboard:latest
+    container_name: autotask-dashboard
+    restart: unless-stopped
+    ports:
+      - "3030:3000"
+    # Values are pulled from the shell that runs `docker compose`.
+    # Use `op run --env-file=op.env -- docker compose up -d` so the
+    # 1Password CLI resolves op:// references into real env vars only
+    # for the lifetime of the compose process.
+    environment:
+      - AUTOTASK_USER
+      - AUTOTASK_SECRET
+      - AUTOTASK_INTEGRATION_CODE
+      - PORT
+      - CACHE_TTL_SECONDS
+      - COMPLETE_STATUS_IDS
+      - WEEK_START_DAY
