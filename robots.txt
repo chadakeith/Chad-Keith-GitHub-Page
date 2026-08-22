@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chadakeith.github.io/Chad-Keith-GitHub-Page/sitemap.xml
