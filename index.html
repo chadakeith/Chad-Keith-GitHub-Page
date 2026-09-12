@@ -56,7 +56,28 @@
           "https://www.linkedin.com/in/chadwickkeith/",
           "https://atlascarolina.com"
         ],
-        "knowsAbout": ["Jamf Pro", "Apple MDM", "Google Workspace", "IT Automation", "Python", "Shell Scripting", "macOS"]
+        "knowsAbout": ["Jamf Pro", "Apple MDM", "Google Workspace", "IT Automation", "Python", "Shell Scripting", "macOS", "Artificial Intelligence", "Leadership"],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "AI Fundamentals",
+            "credentialCategory": "certificate",
+            "dateCreated": "2026-08-28",
+            "recognizedBy": { "@type": "Organization", "name": "MasterClass" },
+            "image": "https://chadakeith.github.io/Chad-Keith-GitHub-Page/certs/masterclass-ai-fundamentals.png"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Leadership and Decision-Making Under Pressure",
+            "credentialCategory": "certificate",
+            "dateCreated": "2026-09-11",
+            "recognizedBy": [
+              { "@type": "Organization", "name": "MasterClass" },
+              { "@type": "Organization", "name": "Navy SEAL Foundation" }
+            ],
+            "image": "https://chadakeith.github.io/Chad-Keith-GitHub-Page/certs/masterclass-leadership-decision-making-under-pressure.png"
+          }
+        ]
       },
       {
         "@type": "WebSite",
@@ -438,6 +459,59 @@
     }
     .footer-links a:hover { color: var(--text); }
 
+    /* CERTIFICATIONS */
+    .certs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.25rem;
+    }
+    .cert-card {
+      background: var(--bg2);
+      border-radius: var(--radius);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .cert-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+    .cert-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: calc(var(--radius) - 6px);
+      box-shadow: var(--shadow);
+    }
+    .cert-body {
+      padding: 0 0.5rem 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .cert-body h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+    .cert-body p {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .cert-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 0.25rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
     /* RESPONSIVE */
     @media (max-width: 680px) {
       .about-grid { grid-template-columns: 1fr; }
@@ -455,6 +529,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
       <li><a href="tools.html">Tools</a></li>
       <li><a href="https://atlascarolina.com" target="_blank" rel="noopener">Atlas Solutions</a></li>
       <li><a href="https://github.com/chadakeith" target="_blank" rel="noopener">GitHub</a></li>
@@ -583,6 +658,44 @@
           <span class="lang-label"><span class="lang-dot" style="background:#3572A5"></span> Python</span>
           <span class="tag">Audit</span>
           <span class="tag">Automation</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="certifications">
+    <div class="section-label">Credentials</div>
+    <h2>Certifications</h2>
+    <p class="section-desc">Recent professional development in AI and leadership.</p>
+    <div class="certs-grid">
+
+      <div class="cert-card">
+        <img src="certs/masterclass-ai-fundamentals.png" alt="MasterClass Certificate: AI Fundamentals, awarded to Chad Keith" width="1600" height="926" loading="lazy">
+        <div class="cert-body">
+          <h3>AI Fundamentals</h3>
+          <p>MasterClass Certificates program led by Steven Johnson, bestselling author and innovation expert.</p>
+          <div class="cert-meta">
+            <span>Issued Aug 28, 2026</span>
+            <span class="tag">MasterClass</span>
+            <span class="tag">AI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <img src="certs/masterclass-leadership-decision-making-under-pressure.png" alt="MasterClass and Navy SEAL Foundation Certificate: Leadership and Decision-Making Under Pressure, awarded to Chad Keith" width="1600" height="926" loading="lazy">
+        <div class="cert-body">
+          <h3>Leadership and Decision-Making Under Pressure</h3>
+          <p>MasterClass Certificates program in partnership with the Navy SEAL Foundation, led by CEO Robin King.</p>
+          <div class="cert-meta">
+            <span>Issued Sep 11, 2026</span>
+            <span class="tag">MasterClass</span>
+            <span class="tag">Navy SEAL Foundation</span>
+            <span class="tag">Leadership</span>
+          </div>
         </div>
       </div>
 
