@@ -72,7 +72,7 @@ nav a.active { color: var(--text); font-weight: 600; }
   height: 152px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center 35%;
   margin: 0 auto 2rem;
   display: block;
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
