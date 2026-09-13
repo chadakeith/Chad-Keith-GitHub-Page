@@ -213,6 +213,31 @@ h2 {
 .skill-card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--text); }
 .skill-card p { font-size: 0.82rem; color: var(--muted); line-height: 1.45; }
 
+.quests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+.quest-card {
+  background: var(--bg2);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.quest-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+.quest-card h3 { font-size: 1.05rem; font-weight: 600; color: var(--text); letter-spacing: -0.01em; }
+.quest-card p { font-size: 0.875rem; color: var(--muted); flex: 1; line-height: 1.5; }
+.quest-url {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
