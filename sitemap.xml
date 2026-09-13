@@ -1,39 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://chadakeith.github.io/Chad-Keith-GitHub-Page/</loc>
+    <loc>https://chadwickkeith.com/</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://chadakeith.github.io/Chad-Keith-GitHub-Page/about.html</loc>
+    <loc>https://chadwickkeith.com/about.html</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://chadakeith.github.io/Chad-Keith-GitHub-Page/experience.html</loc>
+    <loc>https://chadwickkeith.com/experience.html</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chadakeith.github.io/Chad-Keith-GitHub-Page/services.html</loc>
+    <loc>https://chadwickkeith.com/services.html</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://chadakeith.github.io/Chad-Keith-GitHub-Page/credentials.html</loc>
+    <loc>https://chadwickkeith.com/credentials.html</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://chadakeith.github.io/Chad-Keith-GitHub-Page/tools.html</loc>
+    <loc>https://chadwickkeith.com/tools.html</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chadwickkeith.com/blog/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chadwickkeith.com/blog/the-begining.html</loc>
+    <lastmod>2018-04-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chadwickkeith.com/blog/false-start.html</loc>
+    <lastmod>2018-04-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chadwickkeith.com/blog/bottom-of-the-list.html</loc>
+    <lastmod>2018-04-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chadwickkeith.com/blog/know-your-audience-nascar-christians.html</loc>
+    <lastmod>2018-05-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chadwickkeith.com/blog/my-murphy.html</loc>
+    <lastmod>2018-05-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chadwickkeith.com/blog/why-do-millennials-quit-everything.html</loc>
+    <lastmod>2018-06-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
