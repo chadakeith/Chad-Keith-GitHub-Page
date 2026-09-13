@@ -36,4 +36,46 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://chadakeith.github.io/Chad-Keith-GitHub-Page/blog/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chadakeith.github.io/Chad-Keith-GitHub-Page/blog/the-begining.html</loc>
+    <lastmod>2018-04-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chadakeith.github.io/Chad-Keith-GitHub-Page/blog/false-start.html</loc>
+    <lastmod>2018-04-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chadakeith.github.io/Chad-Keith-GitHub-Page/blog/bottom-of-the-list.html</loc>
+    <lastmod>2018-04-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chadakeith.github.io/Chad-Keith-GitHub-Page/blog/know-your-audience-nascar-christians.html</loc>
+    <lastmod>2018-05-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chadakeith.github.io/Chad-Keith-GitHub-Page/blog/my-murphy.html</loc>
+    <lastmod>2018-05-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chadakeith.github.io/Chad-Keith-GitHub-Page/blog/why-do-millennials-quit-everything.html</loc>
+    <lastmod>2018-06-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
