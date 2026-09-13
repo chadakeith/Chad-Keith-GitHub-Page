@@ -68,11 +68,11 @@ nav a.active { color: var(--text); font-weight: 600; }
   text-align: center;
 }
 .hero-avatar {
-  width: 96px;
-  height: 96px;
+  width: 152px;
+  height: 152px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 20%;
   margin: 0 auto 2rem;
   display: block;
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
@@ -591,6 +591,10 @@ footer {
   nav ul { flex-wrap: wrap; gap: 0.6rem 1.1rem; }
   nav a { font-size: 0.82rem; }
   .hero h1 { letter-spacing: -0.02em; }
+  .hero-avatar {
+    width: 140px;
+    height: 140px;
+  }
   .footer-inner { flex-direction: column; align-items: flex-start; }
   .archive-item { flex-direction: column; gap: 0.25rem; }
 }
