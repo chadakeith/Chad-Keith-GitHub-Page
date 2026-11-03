@@ -1,0 +1,52 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  name: "Blog — Chad Keith",
+  url: "https://chadwickkeith.com/blog/",
+  description: "Posts from 2018, moved over from Chad Keith's old WordPress site.",
+  isPartOf: { "@id": "https://chadwickkeith.com/#website" },
+};
+---
+
+<Base
+  title="Blog — Chad Keith"
+  description="Posts from 2018, moved over from Chad Keith's old WordPress site."
+  path="/blog/"
+  jsonLd={jsonLd}
+>
+  <div class="page-hero">
+    <h1>Blog</h1>
+    <p>A handful of posts from 2018.</p>
+  </div>
+  <section>
+    <div class="section-label">From the archive</div>
+    <h2>All posts</h2>
+    <div class="blog-list">
+      {
+        posts.map((post) => {
+          const date = post.data.date.toISOString().slice(0, 10);
+          const formatted = post.data.date.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            timeZone: "UTC",
+          });
+          return (
+            <a class="archive-item" href={`/blog/${post.id}.html`}>
+              <h3>{post.data.title}</h3>
+              <time datetime={date}>{formatted}</time>
+            </a>
+          );
+        })
+      }
+    </div>
+  </section>
+</Base>

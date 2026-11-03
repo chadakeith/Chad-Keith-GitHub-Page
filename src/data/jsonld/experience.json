@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Experience \u2014 Chad Keith",
+  "url": "https://chadwickkeith.com/experience.html",
+  "isPartOf": {
+    "@id": "https://chadwickkeith.com/#website"
+  },
+  "about": {
+    "@id": "https://chadwickkeith.com/#person"
+  }
+}

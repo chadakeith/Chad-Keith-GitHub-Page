@@ -1,0 +1,35 @@
+---
+import { ATLAS, nav } from "../data/site";
+
+interface Props {
+  path: string;
+}
+
+const { path } = Astro.props;
+
+function isCurrent(href: string) {
+  if (href === "/blog/") return path.startsWith("/blog");
+  return path === href;
+}
+---
+
+<nav aria-label="Primary">
+  <a href="/" class="logo">Chad Keith</a>
+  <ul>
+    {
+      nav.map((item) => (
+        <li>
+          <a
+            href={item.href}
+            class={isCurrent(item.href) ? "active" : undefined}
+            aria-current={isCurrent(item.href) ? "page" : undefined}
+          >
+            {item.label}
+          </a>
+        </li>
+      ))
+    }
+    <li><a href={ATLAS} target="_blank" rel="noopener">Atlas Solutions</a></li>
+    <li><a href="https://github.com/chadakeith" target="_blank" rel="noopener">GitHub</a></li>
+  </ul>
+</nav>

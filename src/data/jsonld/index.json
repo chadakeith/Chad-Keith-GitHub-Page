@@ -1,0 +1,154 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://atlascarolina.com/#organization",
+      "name": "Atlas Technology Solutions",
+      "alternateName": [
+        "Atlas Solutions",
+        "Atlas Carolina"
+      ],
+      "url": "https://atlascarolina.com",
+      "foundingDate": "2018",
+      "description": "Apple certified IT consulting and managed services \u2014 Apple deployments, Jamf mobile device management, Google Workspace administration, Mac network support, and Atlas AI consulting for businesses in Charlotte and across the Carolinas. Apple Consultants Network member and certified Jamf MSP, Integrator, and Services Partner.",
+      "email": "consulting@atlascarolina.com",
+      "telephone": "+1-704-897-2690",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Davidson",
+        "addressRegion": "NC",
+        "postalCode": "28036",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        "Charlotte NC",
+        "North Carolina",
+        "South Carolina",
+        "United States"
+      ],
+      "knowsAbout": [
+        "Jamf Pro",
+        "Apple MDM",
+        "Apple Deployment",
+        "Google Workspace",
+        "GAM",
+        "IT Automation",
+        "macOS Management",
+        "Managed IT Services",
+        "AI Consulting",
+        "AI Security"
+      ],
+      "founder": {
+        "@id": "https://chadwickkeith.com/#person"
+      },
+      "employee": {
+        "@id": "https://chadwickkeith.com/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://chadwickkeith.com/#person",
+      "name": "Chad Keith",
+      "jobTitle": "President",
+      "worksFor": {
+        "@id": "https://atlascarolina.com/#organization"
+      },
+      "url": "https://chadwickkeith.com/",
+      "image": "https://chadwickkeith.com/images/chad-keith.jpg",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of North Carolina at Charlotte"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Charlotte",
+        "addressRegion": "NC",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://github.com/chadakeith",
+        "https://www.linkedin.com/in/chadwickkeith/",
+        "https://atlascarolina.com",
+        "https://atlassolutions.tech",
+        "https://overcomingaverage.net",
+        "https://behindthemac.com",
+        "https://chadthetechdad.com",
+        "https://whereiswren.com"
+      ],
+      "knowsAbout": [
+        "Jamf Pro",
+        "Apple MDM",
+        "Google Workspace",
+        "IT Automation",
+        "Python",
+        "Shell Scripting",
+        "macOS",
+        "Network Infrastructure",
+        "Managed IT Services",
+        "AI Consulting",
+        "AI Security"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "AI Fundamentals",
+          "credentialCategory": "Certificate",
+          "dateCreated": "2026-08",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "MasterClass"
+          },
+          "url": "https://certificates.masterclass.com/check/BFF5034638C7949F4E40E9536FA2FFFA53EB0EFE1E6D95CE984D425116C87378MHJSS3pPYit0UGZJSEhnSm05YVNQenlocTJMWHB1L2dFU0VBMklTS0hRcVZJdDRq",
+          "image": "https://chadwickkeith.com/certs/masterclass-ai-fundamentals.png"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Leadership and Decision-Making Under Pressure",
+          "credentialCategory": "Certificate",
+          "dateCreated": "2026-09-11",
+          "recognizedBy": [
+            {
+              "@type": "Organization",
+              "name": "MasterClass"
+            },
+            {
+              "@type": "Organization",
+              "name": "Navy SEAL Foundation"
+            }
+          ],
+          "image": "https://chadwickkeith.com/certs/masterclass-leadership-decision-making-under-pressure.png"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Lead with AI",
+          "credentialCategory": "Certificate",
+          "dateCreated": "2026-09-13",
+          "recognizedBy": [
+            {
+              "@type": "Organization",
+              "name": "MasterClass"
+            },
+            {
+              "@type": "Organization",
+              "name": "Microsoft"
+            }
+          ],
+          "image": "https://chadwickkeith.com/certs/masterclass-lead-with-ai.png"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://chadwickkeith.com/#website",
+      "name": "Chad Keith",
+      "url": "https://chadwickkeith.com/",
+      "about": {
+        "@id": "https://chadwickkeith.com/#person"
+      },
+      "publisher": {
+        "@id": "https://chadwickkeith.com/#person"
+      }
+    }
+  ]
+}

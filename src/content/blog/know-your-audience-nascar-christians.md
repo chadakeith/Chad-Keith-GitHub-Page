@@ -1,69 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+---
+title: "Know your Audience/NASCAR Christians"
+description: "The company I work for does a good bit of work with non-profit organizations, primarily churches."
+date: "2018-05-06"
+---
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF5HT5CLF7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-LF5HT5CLF7');
-  </script>
-  <title>Know your Audience/NASCAR Christians — Chad Keith</title>
-  <meta name="description" content="The company I work for does a good bit of work with non-profit organizations, primarily churches.">
-  <meta name="author" content="Chad Keith">
-  <link rel="canonical" href="https://chadwickkeith.com/blog/know-your-audience-nascar-christians.html">
-  <link rel="stylesheet" href="../styles.css">
-
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://chadwickkeith.com/blog/know-your-audience-nascar-christians.html">
-  <meta property="og:title" content="Know your Audience/NASCAR Christians — Chad Keith">
-  <meta property="og:description" content="The company I work for does a good bit of work with non-profit organizations, primarily churches.">
-  <meta property="og:image" content="https://chadwickkeith.com/Chad%20Headshot%20small%20copy.jpg">
-  <meta property="og:site_name" content="Chad Keith">
-  <meta property="og:locale" content="en_US">
-  <meta property="article:published_time" content="2018-05-06">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Know your Audience/NASCAR Christians",
-    "datePublished": "2018-05-06",
-    "author": { "@id": "https://chadwickkeith.com/#person" },
-    "url": "https://chadwickkeith.com/blog/know-your-audience-nascar-christians.html",
-    "isPartOf": { "@id": "https://chadwickkeith.com/#website" }
-  }
-  </script>
-</head>
-<body>
-
-  <nav>
-    <a href="../index.html" class="logo">Chad Keith</a>
-    <ul>
-      <li><a href="../about.html">About</a></li>
-      <li><a href="../experience.html">Experience</a></li>
-      <li><a href="../services.html">Services</a></li>
-      <li><a href="../credentials.html">Credentials</a></li>
-      <li><a href="../tools.html">Tools</a></li>
-      <li><a href="index.html" class="active">Blog</a></li>
-      <li><a href="https://atlascarolina.com" target="_blank" rel="noopener">Atlas Solutions</a></li>
-      <li><a href="https://github.com/chadakeith" target="_blank" rel="noopener">GitHub</a></li>
-    </ul>
-  </nav>
-
-  <article>
-    <div class="page-hero">
-      <div class="post-date"><time datetime="2018-05-06">May 6, 2018</time></div>
-      <h1>Know your Audience/NASCAR Christians</h1>
-    </div>
-
-    <section class="blog-post">
-      <div class="about-text">
-        <p>The company I work for does a good bit of work with non-profit organizations, primarily churches, to help with the basic IT, networking, and production technology. Usually, I find it an honor to help and discount those ministries but a few weeks ago I had one situation that has haunted me, so I thought I would share.</p>
+<p>The company I work for does a good bit of work with non-profit organizations, primarily churches, to help with the basic IT, networking, and production technology. Usually, I find it an honor to help and discount those ministries but a few weeks ago I had one situation that has haunted me, so I thought I would share.</p>
         <p>The client has had the same contract for years and has not asked for any updates or proactive work so I figured it was time for a check-in. The location is a ways from me and typically handled by a tech on that side of the state so I went out of the way to make sure they were happy. They were excited at the meeting and said it was timely as they were planning on making changes and needed the updated tech. They were, in my way of seeing it, keeping up the Joneses of the modern church by adding WiFi for the congregation, streaming the service, and adding lots of new features to the service that involve upgrading technology. They excitedly asked for a proposal to bring them up to speed and up-fit the new building they were working on.</p>
         <p>After meeting, our team went to work on a proposal that would get the church into the modern era while not breaking the bank. Our team worked hard for a week or so and we were ready to talk. I was excited! We drove up to meet them as I always like in-person meetings better if possible. Everyone along the way was wonderful and pleasant until…… We met with the executive pastor.</p>
         <p>I want to sidestep for a moment to describe this guy. I feel like I have met him 100 times in churches I have been around over the years. He is a thin man in his late 50s probably wearing workout clothes. Made several points about his long stint in the “market” as a businessman. Only in the office from time to time and seems to spend a lot of time biking, golfing, and doing personal things during his “work hours”. He thinks he is modern because he is an “apple guy” and uses an iPad for sermons. (His new MacBook Pro and iPad are a disaster I might add because he tried to do the migration himself but I digress)</p>
@@ -72,25 +13,3 @@
         <p>I bring this up to not only vent a bit but to also point out what really bothered me about that day. We as believers should know our audience, especially in leadership roles at a church. That morning my colleague and I visited another client who was cursing, chewing, spitting, smoking and the nicest people you have ever met. They signed a similar contract with a smile and were so excited to be working with us on a larger scale after also years of being a customer. Then later that day we had the mentioned encounter. My co-worker is not a believer but was there to witness the reactions of two totally different types of people. You would have expected the raised voices from the other client while assuming the “pastor” to be kind and patient, even if the requested service was out of budget for what he wanted. But that was not the case. It was an embarrassing day for me as a Christ follower. The so-called executive pastor had only met with me in person once and had never met my colleague. He did not know who he was speaking with and nor did he seem to care. Perhaps he should have stayed in the market.</p>
         <p>I have unfortunately seen more times than I like to admit where believers are less kind, less caring, less patient, less thoughtful and just generally not as nice as those who are not professing Christians. I am thankful for my Church LIFE Fellowship because I see the opposite types of people there. Kind and generous people who go out of the way to be kind. Our executive pastor Dan Burrell says that he was warned as a child of “NASCAR” Christians. People who are “Christian” just because of who they grew up around or what was normal in their town, not because they were called by Christ and truly changed by His power.</p>
         <p>I hope that I will always be aware of my audience and I hope you will be as well.</p>
-      </div>
-      <p class="blog-post-nav"><a href="index.html">← All posts</a></p>
-    </section>
-  </article>
-
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-left">
-        <strong>Chad Keith</strong>
-        <span>President &mdash; <a href="https://atlascarolina.com" target="_blank" rel="noopener">Atlas Technology Solutions</a>, Davidson, NC</span>
-      </div>
-      <div class="footer-links">
-        <a href="https://atlascarolina.com" target="_blank" rel="noopener">atlascarolina.com</a>
-        <a href="https://atlassolutions.tech" target="_blank" rel="noopener">Atlas AI</a>
-        <a href="https://www.linkedin.com/in/chadwickkeith/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/chadakeith" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </div>
-  </footer>
-
-</body>
-</html>

@@ -579,6 +579,25 @@ footer {
   color: var(--muted);
 }
 
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  transform: translateY(-120%);
+  background: var(--text);
+  color: #fff;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  z-index: 200;
+  text-decoration: none;
+}
+.skip-link:focus { transform: none; }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 @media (max-width: 680px) {
   .about-grid { grid-template-columns: 1fr; }
   nav {
@@ -597,4 +616,24 @@ footer {
   }
   .footer-inner { flex-direction: column; align-items: flex-start; }
   .archive-item { flex-direction: column; gap: 0.25rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .skill-card:hover,
+  .quest-card:hover,
+  .archive-item:hover,
+  .project-card:hover,
+  .service-card:hover,
+  .cert-image-card:hover,
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    transform: none;
+  }
 }

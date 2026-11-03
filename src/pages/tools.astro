@@ -1,67 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+---
+import Base from "../layouts/Base.astro";
+import jsonLd from "../data/jsonld/tools.json";
+---
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF5HT5CLF7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-LF5HT5CLF7');
-  </script>
-  <title>Tools &amp; Projects — Chad Keith | Atlas Technology Solutions</title>
-  <meta name="description" content="IT tools and automation built by Chad Keith of Atlas Technology Solutions: Jamf MDM scripts, GAM automation for Google Workspace, audit bots, and an Autotask team dashboard — plus the platform stack behind them.">
-  <meta name="keywords" content="IT tools, Jamf scripts, GAM scripts, Google Workspace automation, Autotask dashboard, IT audit bot, Atlas Technology Solutions, Chad Keith, Apple MDM utilities, macOS management">
-  <meta name="author" content="Chad Keith">
-  <link rel="canonical" href="https://chadwickkeith.com/tools.html">
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://chadwickkeith.com/tools.html">
-  <meta property="og:title" content="Tools &amp; Projects — Chad Keith | Atlas Technology Solutions">
-  <meta property="og:description" content="Jamf MDM scripts, GAM automation, audit bots, and dashboards built for real IT environments — plus the platform stack behind them.">
-  <meta property="og:site_name" content="Chad Keith">
-  <meta property="og:locale" content="en_US">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Tools &amp; Projects — Chad Keith">
-  <meta name="twitter:description" content="Jamf MDM scripts, GAM automation, audit bots, and dashboards built for real IT environments.">
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Tools & Projects — Chad Keith",
-    "url": "https://chadwickkeith.com/tools.html",
-    "description": "IT tools and automation for Apple device management, Google Workspace administration, and IT operations.",
-    "isPartOf": { "@id": "https://chadwickkeith.com/#website" },
-    "author": { "@id": "https://chadwickkeith.com/#person" }
-  }
-  </script>
-</head>
-<body>
-
-  <nav>
-    <a href="index.html" class="logo">Chad Keith</a>
-    <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="experience.html">Experience</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="credentials.html">Credentials</a></li>
-      <li><a href="tools.html" class="active">Tools</a></li>
-      <li><a href="blog/index.html">Blog</a></li>
-      <li><a href="https://atlascarolina.com" target="_blank" rel="noopener">Atlas Solutions</a></li>
-      <li><a href="https://github.com/chadakeith" target="_blank" rel="noopener">GitHub</a></li>
-    </ul>
-  </nav>
-
-  <div class="page-hero">
+<Base
+  title="Tools &amp; Projects — Chad Keith | Atlas Technology Solutions"
+  description="IT tools and automation built by Chad Keith of Atlas Technology Solutions: Jamf MDM scripts, GAM automation for Google Workspace, audit bots, and an Autotask team dashboard — plus the platform stack behind them."
+  path="/tools.html"
+  ogType="website"
+  jsonLd={jsonLd}
+>
+<div class="page-hero">
     <h1>Tools &amp; Projects</h1>
     <p>Automation and utilities built for real IT environments — Apple device management, Google Workspace, and IT operations.</p>
   </div>
@@ -173,26 +122,9 @@
       <h2>Want tooling like this in your environment?</h2>
       <p>Atlas builds automation that reduces manual IT overhead — from Jamf policies to custom dashboards.</p>
       <div class="hero-links">
-        <a href="services.html" class="btn btn-primary">See Services</a>
+        <a href="/services.html" class="btn btn-primary">See Services</a>
         <a href="https://github.com/chadakeith" target="_blank" rel="noopener" class="btn btn-secondary">Follow on GitHub</a>
       </div>
     </div>
   </section>
-
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-left">
-        <strong>Chad Keith</strong>
-        <span>President &mdash; <a href="https://atlascarolina.com" target="_blank" rel="noopener">Atlas Technology Solutions</a>, Davidson, NC</span>
-      </div>
-      <div class="footer-links">
-        <a href="https://atlascarolina.com" target="_blank" rel="noopener">atlascarolina.com</a>
-        <a href="https://atlassolutions.tech" target="_blank" rel="noopener">Atlas AI</a>
-        <a href="https://www.linkedin.com/in/chadwickkeith/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/chadakeith" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </div>
-  </footer>
-
-</body>
-</html>
+</Base>

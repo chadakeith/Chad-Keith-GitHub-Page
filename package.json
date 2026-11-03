@@ -1,0 +1,14 @@
+{
+  "name": "chadwickkeith",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && node scripts/place-blog-index.mjs",
+    "preview": "astro preview --host 127.0.0.1",
+    "check": "node scripts/check-site.mjs"
+  },
+  "dependencies": {
+    "astro": "^5.15.0"
+  }
+}

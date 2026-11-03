@@ -1,0 +1,70 @@
+---
+import { getCollection, render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const date = post.data.date.toISOString().slice(0, 10);
+const path = `/blog/${post.id}.html`;
+const formatted = post.data.date.toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+  timeZone: "UTC",
+});
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: post.data.title,
+  datePublished: date,
+  description: post.data.description,
+  author: { "@id": "https://chadwickkeith.com/#person" },
+  url: `https://chadwickkeith.com${path}`,
+  isPartOf: { "@id": "https://chadwickkeith.com/#website" },
+};
+---
+
+<Base
+  title={`${post.data.title} — Chad Keith`}
+  description={post.data.description}
+  path={path}
+  ogType="article"
+  image={post.data.image ?? "/images/chad-keith.jpg"}
+  articleDate={date}
+  jsonLd={jsonLd}
+>
+  <article>
+    <div class="page-hero">
+      <div class="post-date"><time datetime={date}>{formatted}</time></div>
+      <h1>{post.data.title}</h1>
+    </div>
+    <section class="blog-post">
+      {
+        post.data.image && (
+          <figure class="blog-figure">
+            <img
+              src={post.data.image}
+              width={post.data.imageWidth}
+              height={post.data.imageHeight}
+              alt={post.data.imageAlt ?? ""}
+            />
+          </figure>
+        )
+      }
+      {post.data.credit && <p class="blog-credit">{post.data.credit}</p>}
+      <div class="about-text">
+        <Content />
+      </div>
+      <p class="blog-post-nav"><a href="/blog/">← All posts</a></p>
+    </section>
+  </article>
+</Base>

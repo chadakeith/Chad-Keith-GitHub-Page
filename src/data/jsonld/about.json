@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "name": "About Chad Keith",
+  "url": "https://chadwickkeith.com/about.html",
+  "isPartOf": {
+    "@id": "https://chadwickkeith.com/#website"
+  },
+  "mainEntity": {
+    "@id": "https://chadwickkeith.com/#person"
+  }
+}

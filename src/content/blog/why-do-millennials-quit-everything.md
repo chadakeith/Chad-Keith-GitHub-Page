@@ -1,69 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+---
+title: "Why do Millennials quit everything?"
+description: "In recent weeks I have had the pleasure and horror of interviewing for a few positions within my team."
+date: "2018-06-21"
+---
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF5HT5CLF7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-LF5HT5CLF7');
-  </script>
-  <title>Why do Millennials quit everything? — Chad Keith</title>
-  <meta name="description" content="In recent weeks I have had the pleasure and horror of interviewing for a few positions within my team.">
-  <meta name="author" content="Chad Keith">
-  <link rel="canonical" href="https://chadwickkeith.com/blog/why-do-millennials-quit-everything.html">
-  <link rel="stylesheet" href="../styles.css">
-
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://chadwickkeith.com/blog/why-do-millennials-quit-everything.html">
-  <meta property="og:title" content="Why do Millennials quit everything? — Chad Keith">
-  <meta property="og:description" content="In recent weeks I have had the pleasure and horror of interviewing for a few positions within my team.">
-  <meta property="og:image" content="https://chadwickkeith.com/Chad%20Headshot%20small%20copy.jpg">
-  <meta property="og:site_name" content="Chad Keith">
-  <meta property="og:locale" content="en_US">
-  <meta property="article:published_time" content="2018-06-21">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Why do Millennials quit everything?",
-    "datePublished": "2018-06-21",
-    "author": { "@id": "https://chadwickkeith.com/#person" },
-    "url": "https://chadwickkeith.com/blog/why-do-millennials-quit-everything.html",
-    "isPartOf": { "@id": "https://chadwickkeith.com/#website" }
-  }
-  </script>
-</head>
-<body>
-
-  <nav>
-    <a href="../index.html" class="logo">Chad Keith</a>
-    <ul>
-      <li><a href="../about.html">About</a></li>
-      <li><a href="../experience.html">Experience</a></li>
-      <li><a href="../services.html">Services</a></li>
-      <li><a href="../credentials.html">Credentials</a></li>
-      <li><a href="../tools.html">Tools</a></li>
-      <li><a href="index.html" class="active">Blog</a></li>
-      <li><a href="https://atlascarolina.com" target="_blank" rel="noopener">Atlas Solutions</a></li>
-      <li><a href="https://github.com/chadakeith" target="_blank" rel="noopener">GitHub</a></li>
-    </ul>
-  </nav>
-
-  <article>
-    <div class="page-hero">
-      <div class="post-date"><time datetime="2018-06-21">June 21, 2018</time></div>
-      <h1>Why do Millennials quit everything?</h1>
-    </div>
-
-    <section class="blog-post">
-      <div class="about-text">
-        <p>In recent weeks I have had the pleasure and horror of interviewing for a few positions within my team. I love getting to know people and chatting with them about the job, hoping to find someone with a desire to grow and drive to learn more and take on a challenge. I, unfortunately, found quite the opposite. After sifting through all of the awful resumes, lack-luster phone calls, and disappointing in-person meetings, I could not help but reflect on this generation of millennials, of which I am a part. I have read articles that line up with my own observations that most millennials tend to fall into two categories: entitled, lazy, unmotivated, dreamers without action or drive or different thinking, entrepreneurial, motivated and self-aware.</p>
+<p>In recent weeks I have had the pleasure and horror of interviewing for a few positions within my team. I love getting to know people and chatting with them about the job, hoping to find someone with a desire to grow and drive to learn more and take on a challenge. I, unfortunately, found quite the opposite. After sifting through all of the awful resumes, lack-luster phone calls, and disappointing in-person meetings, I could not help but reflect on this generation of millennials, of which I am a part. I have read articles that line up with my own observations that most millennials tend to fall into two categories: entitled, lazy, unmotivated, dreamers without action or drive or different thinking, entrepreneurial, motivated and self-aware.</p>
         <p>I wonder, what could have caused this divide and the obvious change in culture for some of us? Why are some entitled dreamers while others start companies that are worth billions in only a few short years? (Evan Spiegel of Snapchat 27, Joe Gebbia of Airbnb 36, and of course Mark Zuckerberg or Facebook 33) I look at my own life as well as take notice of those around me to find clues as to why we see this behavior. I wonder sometimes if the behavior is really all that bad? Maybe it’s good that we think differently. In some cases, it’s a positive thing for our world, but, on the other hand, it can be a recipe for disaster.</p>
         <p>I think back on my life as far as I can and find myself remembering my grandfather. We called him Paw Paw. He was 100 when he finally passed. Having lived through two world wars, the Great Depression, seven children, and nearly 70 years of marriage, he knew how to work hard for his family. There are stories of my grandfather holding up the driveway of a business until the owner would give him work to help his family. There exists another tale of him paying for the birth of my eldest aunt with chickens and many, many more stories from that generation so far removed. I was not part of the conversations that he had with his children, but I feel like the notion passed down from Paw Paws generation to their children was “Get a job and keep it”. Try and get a job to support the family, even if you don’t like it. My dad worked for Mecklenburg county here in Charlotte for 30 plus years and retired in his 50s. He, as well as many others in the baby boomer generation, have been in the same work environment for long stretches of time with little to no change in their careers.</p>
         <p>Some baby boomers had jobs that were not fulfilling, some let down by their companies plummeting single stock options when nearing retirement, and some retired with a gold watch and a pat on the back as they walked away on their last day. This, I think, is where we begin to see a turn in the millennial generation. Watching parents who were disappointed in the lack of excitement in their job, unfulfilled promises were given by their companies, and glass ceilings of growth lead to a change in the way some of us live our lives today. We only have one life to live, and it seems to pass along faster and faster as we get older. I know some were told by their parents to follow their dreams, find their passions, do something they enjoy and avoid getting stuck in a job they will hate for the rest of their career. These are all good things if combined with a few other key factors.</p>
@@ -76,25 +17,3 @@
           <li><a href="https://hbr.org/2016/08/millennials-are-actually-workaholics-according-to-research" target="_blank" rel="noopener">https://hbr.org/2016/08/millennials-are-actually-workaholics-according-to-research</a></li>
           <li><a href="https://www.lifehack.org/articles/work/8-reasons-millennials-seem-lazy-work.html" target="_blank" rel="noopener">https://www.lifehack.org/articles/work/8-reasons-millennials-seem-lazy-work.html</a></li>
         </ul>
-      </div>
-      <p class="blog-post-nav"><a href="index.html">← All posts</a></p>
-    </section>
-  </article>
-
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-left">
-        <strong>Chad Keith</strong>
-        <span>President &mdash; <a href="https://atlascarolina.com" target="_blank" rel="noopener">Atlas Technology Solutions</a>, Davidson, NC</span>
-      </div>
-      <div class="footer-links">
-        <a href="https://atlascarolina.com" target="_blank" rel="noopener">atlascarolina.com</a>
-        <a href="https://atlassolutions.tech" target="_blank" rel="noopener">Atlas AI</a>
-        <a href="https://www.linkedin.com/in/chadwickkeith/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/chadakeith" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </div>
-  </footer>
-
-</body>
-</html>

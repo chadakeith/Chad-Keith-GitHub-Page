@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Services \u2014 Atlas Technology Solutions",
+  "url": "https://chadwickkeith.com/services.html",
+  "isPartOf": {
+    "@id": "https://chadwickkeith.com/#website"
+  },
+  "about": {
+    "@id": "https://atlascarolina.com/#organization"
+  }
+}
