@@ -566,6 +566,28 @@ footer {
   border-radius: calc(var(--radius) - 8px);
   box-shadow: var(--shadow);
 }
+/* Round badge: centered on a soft panel the same shape as the certificate images */
+.cert-badge-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1600 / 926;
+  min-height: 0;
+  overflow: hidden;
+  padding: 0.75rem;
+  border-radius: calc(var(--radius) - 8px);
+  background: radial-gradient(circle at 50% 45%, #eef0ff 0%, #f7f7fb 70%);
+  box-shadow: var(--shadow);
+}
+.cert-badge-wrap picture { display: flex; justify-content: center; height: 100%; width: 100%; }
+.cert-image-card .cert-badge-wrap img {
+  width: auto;
+  height: 100%;
+  max-height: 200px;
+  max-width: 100%;
+  border-radius: 50%;
+  box-shadow: none;
+}
 .cert-image-body { padding: 0 0.5rem 0.4rem; display: flex; flex-direction: column; gap: 0.25rem; }
 .cert-image-body h3 { font-size: 0.92rem; font-weight: 600; color: var(--text); }
 .cert-image-body p { font-size: 0.8rem; color: var(--muted); line-height: 1.45; }
