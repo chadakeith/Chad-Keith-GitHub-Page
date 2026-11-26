@@ -410,10 +410,18 @@ h2 {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1rem;
 }
-/* Even 2×2 grid for a four-card section (avoids a lone card on the last row) */
-.cert-grid.cert-grid-2x2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-@media (max-width: 680px) {
-  .cert-grid.cert-grid-2x2 { grid-template-columns: 1fr; }
+/* 3-across grid; a short last row is centered (flex keeps the leftover cards centered) */
+.cert-grid.cert-grid-3up {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cert-grid.cert-grid-3up > * { flex: 0 1 calc((100% - 2rem) / 3); min-width: 0; }
+@media (max-width: 900px) {
+  .cert-grid.cert-grid-3up > * { flex-basis: calc((100% - 1rem) / 2); }
+}
+@media (max-width: 600px) {
+  .cert-grid.cert-grid-3up > * { flex-basis: 100%; }
 }
 .cert-card {
   background: var(--bg2);
